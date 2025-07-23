@@ -1,0 +1,107 @@
+{
+  "shop": {
+    "language": "en",
+    "currency": "EUR"
+  },
+  "catalog": {
+    "product": {
+      "image": {
+        "thumbnail": {
+          "width": 100,
+          "height": 100
+        },
+        "listing": {
+          "width": 300,
+          "height": 300
+        },
+        "single": {
+          "width": 500,
+          "height": 500
+        }
+      }
+    },
+    "showOutOfStockProduct": true
+  },
+  "order": {
+    "new": {
+      "name": "New",
+      "badge": "default",
+      "progress": "incomplete",
+      "isDefault": true,
+      "next": [
+        "processing",
+        "canceled"
+      ]
+    },
+    "processing": {
+      "name": "Processing",
+      "badge": "default",
+      "progress": "incomplete",
+      "next": [
+        "completed",
+        "canceled"
+      ]
+    },
+    "completed": {
+      "name": "Completed",
+      "badge": "success",
+      "progress": "complete",
+      "next": [
+        "closed"
+      ]
+    },
+    "canceled": {
+      "name": "Canceled",
+      "badge": "critical",
+      "progress": "complete",
+      "next": []
+    },
+    "closed": {
+      "name": "Closed",
+      "badge": "default",
+      "progress": "complete",
+      "next": []
+    }
+  },
+  "system": {
+    "extensions": [
+      {
+        "name": "sample",
+        "resolve": "extensions/sample",
+        "enabled": true
+      },
+      {
+        "name": "productComment",
+        "resolve": "extensions/productComment",
+        "enabled": true,
+        "priority": 10
+      },
+      {
+        "name": "product_review",
+        "resolve": "node_modules/@evershop/product_review",
+        "enabled": true,
+        "priority": 10
+      }
+    ],
+    "theme": "sample"
+  },
+  "themeConfig": {
+    "logo": {
+      "alt": "Elestore Logo",
+      "src": "/logo.png",
+      "width": 75,
+      "height": 70
+    },
+    "headTags": {
+      "links": [
+        {
+          "rel": "icon",
+          "href": "/favicon.ico"
+        }
+      ],
+      "metas": [],
+      "scripts": []
+    },
+    "copyRight": "© 2025 Elestore. All Rights Reserved."
+  }
+}
