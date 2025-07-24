@@ -71,12 +71,6 @@
         "enabled": true
       },
       {
-        "name": "productComment",
-        "resolve": "extensions/productComment",
-        "enabled": true,
-        "priority": 10
-      },
-      {
         "name": "product_review",
         "resolve": "node_modules/@evershop/product_review",
         "enabled": true,
