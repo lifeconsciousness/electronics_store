@@ -64,14 +64,8 @@
     }
   },
   "system": {
-    "theme": "",
+    "theme": "custom_theme",
     "extensions": [
-      {
-        "name": "custom_extension",
-        "resolve": "extensions/custom_extension",
-        "enabled": true,
-        "priority": 10
-      },
       {
         "name": "product_review",
         "resolve": "node_modules/@evershop/product_review",

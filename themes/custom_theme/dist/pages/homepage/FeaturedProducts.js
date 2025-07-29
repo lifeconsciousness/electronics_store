@@ -47,7 +47,7 @@ FeaturedProducts.defaultProps = {
     featuredProducts: []
 };
 export const layout = {
-    areaId: "content",
+    areaId: "content-custom",
     sortOrder: 15
 };
 export const query = `
@@ -79,3 +79,4 @@ export const query = `
     }
   }
 `;
+

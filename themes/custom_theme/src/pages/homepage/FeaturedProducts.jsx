@@ -54,7 +54,7 @@ FeaturedProducts.defaultProps = {
 };
 
 export const layout = {
-  areaId: "content",
+  areaId: "content-custom",
   sortOrder: 15,
 };
 
