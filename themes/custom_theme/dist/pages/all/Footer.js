@@ -1,32 +1,6 @@
 import React from "react";
-import Area from "@components/common/Area";
-import LoadingBar from "@components/common/LoadingBar";
-// import "../../css/global.scss";
-import "./Layout.scss";
-import "./tailwind.scss";
-export default function Layout() {
-    return /*#__PURE__*/ React.createElement(React.Fragment, null, /*#__PURE__*/ React.createElement(LoadingBar, null), /*#__PURE__*/ React.createElement("div", {
-        className: "header"
-    }, /*#__PURE__*/ React.createElement("div", {
-        className: "page-width flex justify-between"
-    }, /*#__PURE__*/ React.createElement(Area, {
-        id: "header",
-        noOuter: true,
-        coreComponents: [
-            {
-                component: {
-                    default: Area
-                },
-                props: {
-                    id: "icon-wrapper",
-                    className: "icon-wrapper flex justify-between space-x-1"
-                },
-                sortOrder: 20
-            }
-        ]
-    }))), /*#__PURE__*/ React.createElement("main", {
-        className: "content"
-    }, /*#__PURE__*/ React.createElement("div", null, "My own content")), /*#__PURE__*/ React.createElement("div", {
+export default function Footer() {
+    return /*#__PURE__*/ React.createElement(React.Fragment, null, /*#__PURE__*/ React.createElement("footer", {
         className: "footer"
     }, /*#__PURE__*/ React.createElement("div", {
         className: "page-width grid grid-cols-1 md:grid-cols-2 gap-2 justify-between"
@@ -96,13 +70,9 @@ export default function Layout() {
     }), /*#__PURE__*/ React.createElement("path", {
         fill: "#012169",
         d: "M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z"
-    }))))), /*#__PURE__*/ React.createElement("div", {
+    })))), /*#__PURE__*/ React.createElement("p", null, "categories"), /*#__PURE__*/ React.createElement("p", null, "legal information"), /*#__PURE__*/ React.createElement("p", null, "contact")), /*#__PURE__*/ React.createElement("div", {
         className: "self-center"
     }, /*#__PURE__*/ React.createElement("div", {
         className: "copyright text-center md:text-right text-textSubdued"
-    }, /*#__PURE__*/ React.createElement("span", null, "Copyright © 2020 EverShop"))))));
+    }, /*#__PURE__*/ React.createElement("span", null, "Copyright © ", new Date().getFullYear(), " Elestore"))))));
 }
-export const layout = {
-    areaId: "body",
-    sortOrder: 1
-};

@@ -67,6 +67,12 @@
     "theme": "custom_theme",
     "extensions": [
       {
+        "name": "custom_extension",
+        "resolve": "extensions/custom_extension",
+        "enabled": true,
+        "priority": 0
+      },
+      {
         "name": "product_review",
         "resolve": "node_modules/@evershop/product_review",
         "enabled": true,
@@ -82,6 +88,7 @@
       "height": 70
     },
     "headTags": {
+      "title": "Elestore",
       "links": [
         {
           "rel": "icon",
