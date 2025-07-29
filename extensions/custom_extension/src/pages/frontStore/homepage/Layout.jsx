@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Area from "@components/common/Area";
 import LoadingBar from "@components/common/LoadingBar";
 // import "../../css/global.scss";

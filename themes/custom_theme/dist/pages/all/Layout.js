@@ -4,7 +4,12 @@ import LoadingBar from "@components/common/LoadingBar";
 import "../../css/global.scss";
 import "./Layout.scss";
 import "./tailwind.scss";
+import { useEffect } from "react";
 export default function Layout() {
+    const path = window.location.pathname;
+    useEffect(()=>{
+        console.log("Current path:", path);
+    }, []);
     return /*#__PURE__*/ React.createElement(React.Fragment, null, /*#__PURE__*/ React.createElement(LoadingBar, null), /*#__PURE__*/ React.createElement("div", {
         className: "header"
     }, /*#__PURE__*/ React.createElement("div", {
@@ -24,10 +29,16 @@ export default function Layout() {
                 sortOrder: 20
             }
         ]
-    }))), /*#__PURE__*/ React.createElement("main", {
+    }))), path === "/" ? /*#__PURE__*/ React.createElement("main", {
         className: "content-custom"
     }, /*#__PURE__*/ React.createElement(Area, {
         id: "content-custom",
+        className: "",
+        noOuter: true
+    })) : /*#__PURE__*/ React.createElement("main", {
+        className: "content"
+    }, /*#__PURE__*/ React.createElement(Area, {
+        id: "content",
         className: "",
         noOuter: true
     })), /*#__PURE__*/ React.createElement("div", {
