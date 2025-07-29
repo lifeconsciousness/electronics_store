@@ -64,11 +64,13 @@
     }
   },
   "system": {
+    "theme": "",
     "extensions": [
       {
-        "name": "sample",
-        "resolve": "extensions/sample",
-        "enabled": true
+        "name": "custom_extension",
+        "resolve": "extensions/custom_extension",
+        "enabled": true,
+        "priority": 10
       },
       {
         "name": "product_review",
@@ -76,8 +78,7 @@
         "enabled": true,
         "priority": 10
       }
-    ],
-    "theme": "sample"
+    ]
   },
   "themeConfig": {
     "logo": {
@@ -96,6 +97,6 @@
       "metas": [],
       "scripts": []
     },
-    "copyRight": "© 2025 Elestore. All Rights Reserved."
+    "copyRight": "© 2024 Elestore. All Rights Reserved."
   }
 }

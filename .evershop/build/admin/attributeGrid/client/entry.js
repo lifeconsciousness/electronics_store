@@ -29,7 +29,7 @@ import ee4aa72132c12ca518660b07b63e22fbf from 'file:///Users/nichogo/Desktop/ele
 import e57bd040215c79dfa89505b9a567ccd86 from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/modules/setting/pages/admin/all/SettingMenuGroup.js';
 import ed970bcb9b203fa65d6ebbf547761d6b7 from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/modules/setting/pages/admin/all/StoreSettingMenu.js';
 import e6a0becdf62c3dea9cf6374241043ef7a from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/modules/tax/pages/admin/all/TaxSettingMenu.js';
-import e7b000ca2bd2518d89cc07b44dbbe58ac from 'file:///Users/nichogo/Desktop/electronics_store/extensions/sample/dist/pages/admin/all/Hello.js';
+import ea94a26348269e3eebe0948150e92ce98 from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/product_review/dist/pages/admin/all/ReviewMenuGroup.js';
 import collection_products from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/components/admin/widgets/CollectionProductsSetting.js';
 import text_block from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/components/admin/widgets/TextBlockSetting.js';
 import basic_menu from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/components/admin/widgets/BasicMenuSetting.js';
@@ -86,6 +86,11 @@ Area.defaultProps.components = {
       id: 'e57bd040215c79dfa89505b9a567ccd86',
       sortOrder: 500,
       component: { default: e57bd040215c79dfa89505b9a567ccd86 }
+    },
+    ea94a26348269e3eebe0948150e92ce98: {
+      id: 'ea94a26348269e3eebe0948150e92ce98',
+      sortOrder: 40,
+      component: { default: ea94a26348269e3eebe0948150e92ce98 }
     }
   },
   quickLinks: {
@@ -110,11 +115,6 @@ Area.defaultProps.components = {
       id: 'e3d4c2ac8e31ec73be9ac3765c5991865',
       sortOrder: 10,
       component: { default: e3d4c2ac8e31ec73be9ac3765c5991865 }
-    },
-    e7b000ca2bd2518d89cc07b44dbbe58ac: {
-      id: 'e7b000ca2bd2518d89cc07b44dbbe58ac',
-      sortOrder: 0,
-      component: { default: e7b000ca2bd2518d89cc07b44dbbe58ac }
     }
   },
   pageHeadingRight: {

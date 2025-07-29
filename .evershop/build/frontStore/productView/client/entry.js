@@ -21,7 +21,8 @@ import e9d94f064257cd97755d5f9920b570bfd from 'file:///Users/nichogo/Desktop/ele
 import e49357aa605ce93a8ce1206553d0a2b82 from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/all/Logo.js';
 import e80fd16c408e659500665291caff6892f from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/all/Notification.js';
 import e37d9c56ea2df2993de9c2ad6bef05044 from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/modules/customer/pages/frontStore/all/UserIcon.js';
-import e9b39823555905edbb6fe88ace435246c from 'file:///Users/nichogo/Desktop/electronics_store/extensions/sample/dist/pages/frontStore/all/FreeShippingMessage.js';
+import e2b689134a1537e2f6b04eadfdd7005df from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/product_review/dist/pages/frontStore/productView/ReviewForm.js';
+import e758926fd00a5179ffac47828a3225704 from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/product_review/dist/pages/frontStore/productView/Reviews.js';
 import collection_products from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/components/frontStore/widgets/CollectionProducts.js';
 import text_block from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/components/frontStore/widgets/TextBlock.js';
 import basic_menu from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/components/frontStore/widgets/BasicMenu.js';
@@ -82,6 +83,16 @@ Area.defaultProps.components = {
       id: 'e5acfde4077bbde7adcbd22f0747cdcf9',
       sortOrder: 10,
       component: { default: e5acfde4077bbde7adcbd22f0747cdcf9 }
+    },
+    e2b689134a1537e2f6b04eadfdd7005df: {
+      id: 'e2b689134a1537e2f6b04eadfdd7005df',
+      sortOrder: 50,
+      component: { default: e2b689134a1537e2f6b04eadfdd7005df }
+    },
+    e758926fd00a5179ffac47828a3225704: {
+      id: 'e758926fd00a5179ffac47828a3225704',
+      sortOrder: 45,
+      component: { default: e758926fd00a5179ffac47828a3225704 }
     }
   },
   content: {
@@ -120,11 +131,6 @@ Area.defaultProps.components = {
       id: 'e80fd16c408e659500665291caff6892f',
       sortOrder: 10,
       component: { default: e80fd16c408e659500665291caff6892f }
-    },
-    e9b39823555905edbb6fe88ace435246c: {
-      id: 'e9b39823555905edbb6fe88ace435246c',
-      sortOrder: 0,
-      component: { default: e9b39823555905edbb6fe88ace435246c }
     }
   },
   header: {

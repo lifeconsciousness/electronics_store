@@ -11,8 +11,6 @@ import e9d94f064257cd97755d5f9920b570bfd from 'file:///Users/nichogo/Desktop/ele
 import e49357aa605ce93a8ce1206553d0a2b82 from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/all/Logo.js';
 import e80fd16c408e659500665291caff6892f from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/all/Notification.js';
 import e37d9c56ea2df2993de9c2ad6bef05044 from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/modules/customer/pages/frontStore/all/UserIcon.js';
-import e9b39823555905edbb6fe88ace435246c from 'file:///Users/nichogo/Desktop/electronics_store/extensions/sample/dist/pages/frontStore/all/FreeShippingMessage.js';
-import ecf2d02f7eae99a57501db68174af4541 from 'file:///Users/nichogo/Desktop/electronics_store/extensions/sample/dist/pages/frontStore/homepage/FooList.js';
 import collection_products from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/components/frontStore/widgets/CollectionProducts.js';
 import text_block from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/components/frontStore/widgets/TextBlock.js';
 import basic_menu from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/components/frontStore/widgets/BasicMenu.js';
@@ -40,11 +38,6 @@ Area.defaultProps.components = {
       id: 'eb52408d2e7f153ee66cbe515c679520b',
       sortOrder: 0,
       component: { default: eb52408d2e7f153ee66cbe515c679520b }
-    },
-    ecf2d02f7eae99a57501db68174af4541: {
-      id: 'ecf2d02f7eae99a57501db68174af4541',
-      sortOrder: 30,
-      component: { default: ecf2d02f7eae99a57501db68174af4541 }
     }
   },
   footer: {
@@ -71,11 +64,6 @@ Area.defaultProps.components = {
       id: 'e80fd16c408e659500665291caff6892f',
       sortOrder: 10,
       component: { default: e80fd16c408e659500665291caff6892f }
-    },
-    e9b39823555905edbb6fe88ace435246c: {
-      id: 'e9b39823555905edbb6fe88ace435246c',
-      sortOrder: 0,
-      component: { default: e9b39823555905edbb6fe88ace435246c }
     }
   },
   header: {

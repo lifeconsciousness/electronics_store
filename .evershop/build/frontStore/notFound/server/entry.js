@@ -13,7 +13,6 @@ import e80fd16c408e659500665291caff6892f from 'file:///Users/nichogo/Desktop/ele
 import e6a8c291f38f6bcc603d84be3f52014ec from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/notFound/Meta.js';
 import e66aee5fd2026e47c0fd968726d298cca from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/notFound/NotFound.js';
 import e37d9c56ea2df2993de9c2ad6bef05044 from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/modules/customer/pages/frontStore/all/UserIcon.js';
-import e9b39823555905edbb6fe88ace435246c from 'file:///Users/nichogo/Desktop/electronics_store/extensions/sample/dist/pages/frontStore/all/FreeShippingMessage.js';
 import collection_products from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/components/frontStore/widgets/CollectionProducts.js';
 import text_block from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/components/frontStore/widgets/TextBlock.js';
 import basic_menu from 'file:///Users/nichogo/Desktop/electronics_store/node_modules/@evershop/evershop/dist/components/frontStore/widgets/BasicMenu.js';
@@ -77,11 +76,6 @@ Area.defaultProps.components = {
       id: 'e80fd16c408e659500665291caff6892f',
       sortOrder: 10,
       component: { default: e80fd16c408e659500665291caff6892f }
-    },
-    e9b39823555905edbb6fe88ace435246c: {
-      id: 'e9b39823555905edbb6fe88ace435246c',
-      sortOrder: 0,
-      component: { default: e9b39823555905edbb6fe88ace435246c }
     }
   },
   header: {
