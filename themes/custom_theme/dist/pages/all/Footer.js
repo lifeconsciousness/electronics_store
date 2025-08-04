@@ -265,10 +265,9 @@ export default function Footer() {
         href: "/"
     }, "Privacy Policy")), /*#__PURE__*/ React.createElement("p", {
         className: "mt-4 text-lg text-gray-500 sm:order-first sm:mt-0"
-    }, "© 2022 Company Name"))))));
+    }, "© ", new Date().getFullYear(), " Company Name"))))));
 }
 export const layout = {
     areaId: 'footer',
     sortOrder: 10
 };
-
