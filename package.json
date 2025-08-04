@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "@evershop/evershop": "^2.0.1",
-    "@evershop/product_review": "^2.0.0"
+    "@evershop/product_review": "^2.0.0",
+    "lucide-react": "^0.536.0"
   },
   "devDependencies": {
     "@parcel/watcher": "2.5.1",

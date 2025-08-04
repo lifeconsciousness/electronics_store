@@ -6,17 +6,28 @@ import "./Layout.scss";
 import "./tailwind.scss";
 import { useEffect } from "react";
 import Footer from "./Footer";
+import { LayoutGrid } from "lucide-react";
+// import { Link } from "next/link";
 export default function Layout() {
     const path = window.location.pathname;
     useEffect(()=>{
         console.log("Current path:", path);
     }, []);
     return /*#__PURE__*/ React.createElement(React.Fragment, null, /*#__PURE__*/ React.createElement(LoadingBar, null), /*#__PURE__*/ React.createElement("div", {
-        className: "header"
+        className: "header",
+        className: "mb-0 border-b-2 border-black-400"
     }, /*#__PURE__*/ React.createElement("div", {
         className: "page-width flex justify-between"
-    }, /*#__PURE__*/ React.createElement(Area, {
-        id: "header",
+    }, /*#__PURE__*/ React.createElement("a", {
+        href: "/"
+    }, /*#__PURE__*/ React.createElement("img", {
+        src: "./logo.png",
+        alt: "logo",
+        className: "w-32"
+    })), /*#__PURE__*/ React.createElement("h2", {
+        className: "pt-6"
+    }, "Electronics store"), /*#__PURE__*/ React.createElement(Area, {
+        id: "header-new",
         noOuter: true,
         coreComponents: [
             {
@@ -30,7 +41,11 @@ export default function Layout() {
                 sortOrder: 20
             }
         ]
-    }))), path === "/" ? /*#__PURE__*/ React.createElement("main", {
+    }))), /*#__PURE__*/ React.createElement("div", {
+        className: "header"
+    }, /*#__PURE__*/ React.createElement("button", {
+        className: "flex gap-4 border-2 border-slate-800 w-fit rounded-md p-2"
+    }, /*#__PURE__*/ React.createElement(LayoutGrid, null), " Categories")), path === "/" ? /*#__PURE__*/ React.createElement("main", {
         className: "content-custom"
     }, /*#__PURE__*/ React.createElement(Area, {
         id: "content-custom",
@@ -48,4 +63,3 @@ export const layout = {
     areaId: "body",
     sortOrder: 0
 };
-

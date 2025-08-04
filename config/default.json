@@ -69,7 +69,7 @@
       {
         "name": "custom_extension",
         "resolve": "extensions/custom_extension",
-        "enabled": true,
+        "enabled": false,
         "priority": 0
       },
       {
