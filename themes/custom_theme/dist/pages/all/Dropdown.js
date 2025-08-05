@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useRef, useEffect } from "react";
-export default function Dropdown({ button, children, width = "w-80" }) {
+export default function Dropdown({ button, children, width = "w-fit" }) {
     const [isOpen, setIsOpen] = useState(false);
     const ref = useRef(null);
     // Close on outside click

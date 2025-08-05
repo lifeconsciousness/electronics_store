@@ -41,6 +41,7 @@ export default function CatalogDropdown() {
                 </button>
 
             }
+            width="size-max"
 
         >
 

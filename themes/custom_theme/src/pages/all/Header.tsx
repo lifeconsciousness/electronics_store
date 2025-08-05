@@ -11,20 +11,14 @@ import {
 } from "lucide-react";
 import Dropdown from "./Dropdown";
 import CatalogDropdown from "./CatalogDropdown";
+import Logo from "./Logo";
 
 export default function Header() {
     return (
         <header className="w-full font-sans text-2xl">
             {/* Top Header */}
             <div className="bg-[#2f2f2f] text-white px-10 py-6 flex items-center justify-between xl:px-56">
-                {/* Logo */}
-                <div className="flex items-center gap-3">
-                    <div className="text-orange-600 text-4xl">💡</div>
-                    <div className="text-3xl font-bold">
-                        <span className="text-orange-600">ele</span>
-                        <span className="text-gray-300">ctronics</span>
-                    </div>
-                </div>
+                <Logo />
 
                 {/* Search Bar */}
                 <div className="flex-1 mx-10 w-full max-w-5xl flex bg-white rounded-r text-xl">
@@ -90,12 +84,24 @@ export default function Header() {
                     {/* <button className="bg-gray-100 text-black px-4 py-2 rounded text-lg">
                         QUICK BUY
                     </button> */}
-                    <span>EUR</span>
-                    {/* <Globe className="mr-2" /> */}
+
+                    {/* <Dropdown
+                        button={
+                            <button className="flex items-center gap-2 rounded-xl px-4 py-2 hover:bg-white/10">
+                                <span>EUR</span>
+                            </button>
+                        }
+                    >
+                        <ul className="space-y-2">
+                            <li className="flex items-center justify-between px-3 py-2 rounded hover:bg-gray-100 cursor-pointer text-xl">EUR</li>
+                            <li className="flex items-center justify-between px-3 py-2 rounded hover:bg-gray-100 cursor-pointer text-xl">USD</li>
+                        </ul>
+                    </Dropdown> */}
+
                     <Dropdown
                         button={
-                            <button className="flex items-center gap-2 border-2 rounded-xl px-4 py-2 hover:bg-white/10">
-                                <Globe className="mr-2" />
+                            <button className="flex items-center gap-2 rounded-xl px-4 py-2 hover:bg-white/10">
+                                <Globe className="" />
                             </button>
                         }
                     >
@@ -104,6 +110,8 @@ export default function Header() {
                             <li className="flex items-center justify-between px-3 py-2 rounded hover:bg-gray-100 cursor-pointer text-xl">EN</li>
                         </ul>
                     </Dropdown>
+
+
                 </div>
             </div>
         </header>

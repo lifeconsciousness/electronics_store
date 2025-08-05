@@ -13,7 +13,8 @@ export default function CatalogDropdown() {
     return /*#__PURE__*/ React.createElement(Dropdown, {
         button: /*#__PURE__*/ React.createElement("button", {
             className: "flex items-center gap-2 border-white border-2 rounded-xl px-4 py-2 text-white text-xl hover:bg-white/10"
-        }, /*#__PURE__*/ React.createElement(LayoutGrid, null), "CATALOG")
+        }, /*#__PURE__*/ React.createElement(LayoutGrid, null), "CATALOG"),
+        width: "size-max"
     }, /*#__PURE__*/ React.createElement("ul", {
         className: "space-y-2"
     }, categories.map((cat, idx)=>/*#__PURE__*/ React.createElement("li", {

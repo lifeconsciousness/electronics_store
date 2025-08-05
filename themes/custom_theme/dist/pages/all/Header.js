@@ -2,22 +2,13 @@ import React from "react";
 import { User, ShoppingCart, Search, ChevronDown, Globe } from "lucide-react";
 import Dropdown from "./Dropdown";
 import CatalogDropdown from "./CatalogDropdown";
+import Logo from "./Logo";
 export default function Header() {
     return /*#__PURE__*/ React.createElement("header", {
         className: "w-full font-sans text-2xl"
     }, /*#__PURE__*/ React.createElement("div", {
         className: "bg-[#2f2f2f] text-white px-10 py-6 flex items-center justify-between xl:px-56"
-    }, /*#__PURE__*/ React.createElement("div", {
-        className: "flex items-center gap-3"
-    }, /*#__PURE__*/ React.createElement("div", {
-        className: "text-orange-600 text-4xl"
-    }, "💡"), /*#__PURE__*/ React.createElement("div", {
-        className: "text-3xl font-bold"
-    }, /*#__PURE__*/ React.createElement("span", {
-        className: "text-orange-600"
-    }, "ele"), /*#__PURE__*/ React.createElement("span", {
-        className: "text-gray-300"
-    }, "ctronics"))), /*#__PURE__*/ React.createElement("div", {
+    }, /*#__PURE__*/ React.createElement(Logo, null), /*#__PURE__*/ React.createElement("div", {
         className: "flex-1 mx-10 w-full max-w-5xl flex bg-white rounded-r text-xl"
     }, /*#__PURE__*/ React.createElement("div", {
         className: "relative w-full flex items-center justify-center"
@@ -54,11 +45,11 @@ export default function Header() {
         className: "w-5 h-5"
     })), /*#__PURE__*/ React.createElement("button", null, "SPECIAL-DEALS")), /*#__PURE__*/ React.createElement("div", {
         className: "flex items-center gap-12"
-    }, /*#__PURE__*/ React.createElement("span", null, "EUR"), /*#__PURE__*/ React.createElement(Dropdown, {
+    }, /*#__PURE__*/ React.createElement(Dropdown, {
         button: /*#__PURE__*/ React.createElement("button", {
-            className: "flex items-center gap-2 border-2 rounded-xl px-4 py-2 hover:bg-white/10"
+            className: "flex items-center gap-2 rounded-xl px-4 py-2 hover:bg-white/10"
         }, /*#__PURE__*/ React.createElement(Globe, {
-            className: "mr-2"
+            className: ""
         }))
     }, /*#__PURE__*/ React.createElement("ul", {
         className: "space-y-2"
