@@ -9,7 +9,6 @@ import Footer from "./Footer";
 import { LayoutGrid } from "lucide-react";
 import Logo from "./Logo";
 import Header from "./Header";
-// import { Link } from "next/link";
 
 export default function Layout() {
   const path = window.location.pathname;
@@ -24,7 +23,7 @@ export default function Layout() {
 
       <Header />
 
-      <div className="header">
+      {/* <div className="header">
         <div className="page-width flex justify-between">
           <Area
             id="header"
@@ -44,7 +43,7 @@ export default function Layout() {
             ]}
           />
         </div>
-      </div>
+      </div> */}
 
       {path === "/" ? (
         <main className="content-custom">

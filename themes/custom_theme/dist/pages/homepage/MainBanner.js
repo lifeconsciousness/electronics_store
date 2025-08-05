@@ -6,10 +6,10 @@ function MainBanner() {
     }, /*#__PURE__*/ React.createElement("div", {
         className: "page-width grid grid-cols-1 md:grid-cols-2 gap-2"
     }, /*#__PURE__*/ React.createElement("div", {
-        className: "text-center md:text-left px-2 "
+        className: "text-center md:text-left px-2 z-10"
     }, /*#__PURE__*/ React.createElement("h3", {
-        className: "h1 "
-    }, "Your reliable electronics distributor & online store"), /*#__PURE__*/ React.createElement("p", null, "Discover the Latest Trends and Elevate Your Wardrobe Today"), /*#__PURE__*/ React.createElement("p", null), /*#__PURE__*/ React.createElement("a", {
+        className: "h1"
+    }, "Your reliable electronics distributor & online store"), /*#__PURE__*/ React.createElement("p", null, "Explore the Most Reliable Electronic Components"), /*#__PURE__*/ React.createElement("p", null), /*#__PURE__*/ React.createElement("a", {
         className: "button button-primary",
         href: ""
     }, "SHOW NOW")), /*#__PURE__*/ React.createElement("div", null)));
@@ -19,3 +19,4 @@ export const layout = {
     areaId: "content-custom",
     sortOrder: 1
 };
+

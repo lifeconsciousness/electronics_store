@@ -3,12 +3,28 @@ import { User, ShoppingCart, Search, ChevronDown, Globe } from "lucide-react";
 import Dropdown from "./Dropdown";
 import CatalogDropdown from "./CatalogDropdown";
 import Logo from "./Logo";
+import Area from "@evershop/evershop/components/common";
 export default function Header() {
     return /*#__PURE__*/ React.createElement("header", {
         className: "w-full font-sans text-2xl"
     }, /*#__PURE__*/ React.createElement("div", {
         className: "bg-[#2f2f2f] text-white px-10 py-6 flex items-center justify-between xl:px-56"
-    }, /*#__PURE__*/ React.createElement(Logo, null), /*#__PURE__*/ React.createElement("div", {
+    }, /*#__PURE__*/ React.createElement(Logo, null), /*#__PURE__*/ React.createElement(Area, {
+        id: "header-new",
+        noOuter: true,
+        coreComponents: [
+            {
+                component: {
+                    default: Area
+                },
+                props: {
+                    id: "icon-wrapper",
+                    className: "icon-wrapper flex justify-between space-x-1"
+                },
+                sortOrder: 20
+            }
+        ]
+    }), /*#__PURE__*/ React.createElement("div", {
         className: "flex-1 mx-10 w-full max-w-5xl flex bg-white rounded-r text-xl"
     }, /*#__PURE__*/ React.createElement("div", {
         className: "relative w-full flex items-center justify-center"
@@ -59,4 +75,3 @@ export default function Header() {
         className: "flex items-center justify-between px-3 py-2 rounded hover:bg-gray-100 cursor-pointer text-xl"
     }, "EN"))))));
 }
-

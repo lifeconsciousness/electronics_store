@@ -18,4 +18,3 @@ export const layout = {
     areaId: "header",
     sortOrder: 5
 };
-
