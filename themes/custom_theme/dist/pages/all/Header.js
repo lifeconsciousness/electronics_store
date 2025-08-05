@@ -1,5 +1,7 @@
 import React from "react";
-import { User, ShoppingCart, Search, ChevronDown, Globe, LayoutGrid } from "lucide-react";
+import { User, ShoppingCart, Search, ChevronDown, Globe } from "lucide-react";
+import Dropdown from "./Dropdown";
+import CatalogDropdown from "./CatalogDropdown";
 export default function Header() {
     return /*#__PURE__*/ React.createElement("header", {
         className: "w-full font-sans text-2xl"
@@ -46,16 +48,24 @@ export default function Header() {
         className: "bg-orange-600 text-white text-xl font-semibold px-10 py-4 flex items-center justify-between xl:px-56"
     }, /*#__PURE__*/ React.createElement("div", {
         className: "flex gap-10 items-center"
-    }, /*#__PURE__*/ React.createElement("button", {
-        className: "flex items-center gap-2 border-white border-2 rounded-xl p-2"
-    }, /*#__PURE__*/ React.createElement(LayoutGrid, null), " CATALOG"), /*#__PURE__*/ React.createElement("button", null, "STOCK CLEARANCE"), /*#__PURE__*/ React.createElement("button", {
+    }, /*#__PURE__*/ React.createElement(CatalogDropdown, null), /*#__PURE__*/ React.createElement("button", null, "STOCK CLEARANCE"), /*#__PURE__*/ React.createElement("button", {
         className: "flex items-center gap-1"
     }, "MANUFACTURERS", /*#__PURE__*/ React.createElement(ChevronDown, {
         className: "w-5 h-5"
     })), /*#__PURE__*/ React.createElement("button", null, "SPECIAL-DEALS")), /*#__PURE__*/ React.createElement("div", {
         className: "flex items-center gap-12"
-    }, /*#__PURE__*/ React.createElement("span", null, "EUR"), /*#__PURE__*/ React.createElement(Globe, {
-        className: "mr-2"
-    }))));
+    }, /*#__PURE__*/ React.createElement("span", null, "EUR"), /*#__PURE__*/ React.createElement(Dropdown, {
+        button: /*#__PURE__*/ React.createElement("button", {
+            className: "flex items-center gap-2 border-2 rounded-xl px-4 py-2 hover:bg-white/10"
+        }, /*#__PURE__*/ React.createElement(Globe, {
+            className: "mr-2"
+        }))
+    }, /*#__PURE__*/ React.createElement("ul", {
+        className: "space-y-2"
+    }, /*#__PURE__*/ React.createElement("li", {
+        className: "flex items-center justify-between px-3 py-2 rounded hover:bg-gray-100 cursor-pointer text-xl"
+    }, "NL"), /*#__PURE__*/ React.createElement("li", {
+        className: "flex items-center justify-between px-3 py-2 rounded hover:bg-gray-100 cursor-pointer text-xl"
+    }, "EN"))))));
 }
 

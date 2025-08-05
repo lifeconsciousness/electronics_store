@@ -9,6 +9,8 @@ import {
     Globe,
     LayoutGrid,
 } from "lucide-react";
+import Dropdown from "./Dropdown";
+import CatalogDropdown from "./CatalogDropdown";
 
 export default function Header() {
     return (
@@ -71,9 +73,10 @@ export default function Header() {
             {/* Navigation Bar */}
             <div className="bg-orange-600 text-white text-xl font-semibold px-10 py-4 flex items-center justify-between xl:px-56">
                 <div className="flex gap-10 items-center">
-                    <button className="flex items-center gap-2 border-white border-2 rounded-xl p-2">
+                    {/* <button className="flex items-center gap-2 border-white border-2 rounded-xl p-2">
                         <LayoutGrid /> CATALOG
-                    </button>
+                    </button> */}
+                    <CatalogDropdown />
                     <button>STOCK CLEARANCE</button>
                     <button className="flex items-center gap-1">
                         MANUFACTURERS
@@ -88,7 +91,19 @@ export default function Header() {
                         QUICK BUY
                     </button> */}
                     <span>EUR</span>
-                    <Globe className="mr-2" />
+                    {/* <Globe className="mr-2" /> */}
+                    <Dropdown
+                        button={
+                            <button className="flex items-center gap-2 border-2 rounded-xl px-4 py-2 hover:bg-white/10">
+                                <Globe className="mr-2" />
+                            </button>
+                        }
+                    >
+                        <ul className="space-y-2">
+                            <li className="flex items-center justify-between px-3 py-2 rounded hover:bg-gray-100 cursor-pointer text-xl">NL</li>
+                            <li className="flex items-center justify-between px-3 py-2 rounded hover:bg-gray-100 cursor-pointer text-xl">EN</li>
+                        </ul>
+                    </Dropdown>
                 </div>
             </div>
         </header>
