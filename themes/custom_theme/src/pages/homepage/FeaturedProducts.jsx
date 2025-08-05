@@ -10,10 +10,12 @@ export default function FeaturedProducts({ collection }) {
   return (
     <div className="pt-3">
       <div className="page-width">
-        <h2 className="mt-3 mb-3 text-center uppercase  tracking-widest">
+        <h2 className="mt-3 mb-3 text-center uppercase tracking-widest">
           {collection.name}
         </h2>
-        <ProductList products={collection.products.items} countPerRow={3} />
+        <div className="w-[60%] mx-auto">
+          <ProductList products={collection.products.items} countPerRow={3} />
+        </div>
       </div>
     </div>
   );

@@ -10,11 +10,13 @@ export default function FeaturedProducts({ collection }) {
     }, /*#__PURE__*/ React.createElement("div", {
         className: "page-width"
     }, /*#__PURE__*/ React.createElement("h2", {
-        className: "mt-3 mb-3 text-center uppercase  tracking-widest"
-    }, collection.name), /*#__PURE__*/ React.createElement(ProductList, {
+        className: "mt-3 mb-3 text-center uppercase tracking-widest"
+    }, collection.name), /*#__PURE__*/ React.createElement("div", {
+        className: "w-[60%] mx-auto"
+    }, /*#__PURE__*/ React.createElement(ProductList, {
         products: collection.products.items,
         countPerRow: 3
-    })));
+    }))));
 }
 FeaturedProducts.propTypes = {
     collection: PropTypes.shape({
@@ -79,3 +81,4 @@ export const query = `
     }
   }
 `;
+

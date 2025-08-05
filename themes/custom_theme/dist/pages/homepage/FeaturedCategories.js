@@ -123,7 +123,7 @@ const categories = [
 ];
 const CategoriesGrid = ()=>{
     return /*#__PURE__*/ React.createElement("section", {
-        className: "max-w-7xl mx-auto px-4 py-10"
+        className: "mx-8 px-4 py-10 xl:mx-56"
     }, /*#__PURE__*/ React.createElement("h2", {
         className: "text-2xl font-bold mb-6"
     }, "Categories"), /*#__PURE__*/ React.createElement("div", {
@@ -146,3 +146,4 @@ export const layout = {
     areaId: "content-custom",
     sortOrder: 5
 };
+
