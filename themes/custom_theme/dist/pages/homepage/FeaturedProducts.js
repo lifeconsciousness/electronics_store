@@ -5,18 +5,16 @@ export default function FeaturedProducts({ collection }) {
     if (!collection) {
         return null;
     }
-    return /*#__PURE__*/ React.createElement("div", {
-        className: "pt-3"
-    }, /*#__PURE__*/ React.createElement("div", {
-        className: "page-width"
+    return /*#__PURE__*/ React.createElement("section", {
+        className: "mx-8 px-4 py-10 xl:mx-56"
     }, /*#__PURE__*/ React.createElement("h2", {
-        className: "mt-3 mb-3 text-center uppercase tracking-widest"
-    }, collection.name), /*#__PURE__*/ React.createElement("div", {
-        className: "w-[60%] mx-auto"
+        className: "text-3xl font-bold mb-6"
+    }, "Featured Items"), /*#__PURE__*/ React.createElement("div", {
+        className: "w-[60%] h-fit"
     }, /*#__PURE__*/ React.createElement(ProductList, {
         products: collection.products.items,
         countPerRow: 3
-    }))));
+    })));
 }
 FeaturedProducts.propTypes = {
     collection: PropTypes.shape({

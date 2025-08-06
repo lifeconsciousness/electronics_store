@@ -21,8 +21,8 @@ export default function OnlyHomePage() {
     }), /*#__PURE__*/ React.createElement(Area, {
         id: "productViewRight"
     })));
-}
-export const layout = {
-    areaId: 'content-custom',
-    sortOrder: 10
-};
+} // export const layout = {
+ //   areaId: 'content-custom',
+ //   sortOrder: 10
+ // };
+

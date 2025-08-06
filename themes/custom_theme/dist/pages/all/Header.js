@@ -63,7 +63,7 @@ export default function Header() {
         className: "flex items-center gap-12"
     }, /*#__PURE__*/ React.createElement(Dropdown, {
         button: /*#__PURE__*/ React.createElement("button", {
-            className: "flex items-center gap-2 rounded-xl px-4 py-2 hover:bg-white/10"
+            className: "flex items-center gap-2 rounded-xl pl-4 pr-3 py-2 hover:bg-white/10"
         }, /*#__PURE__*/ React.createElement(Globe, {
             className: ""
         }))

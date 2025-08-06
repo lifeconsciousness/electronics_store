@@ -105,10 +105,10 @@ export default function Footer() {
 
             <footer className="bg-[#2f2f2f] footer text-xl">
                 <div className="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-24">
-                    <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+                    <div className="grid grid-cols-1 gap-24 lg:grid-cols-3">
                         <div>
 
-                            <div className="flex-col items-center w-full">
+                            <div className="flex flex-col items-center w-full">
                                 <Logo />
                                 <p
                                     className="max-w-md mx-auto mt-6 leading-relaxed text-center text-gray-400 sm:max-w-xs sm:mx-0 sm:text-left"
@@ -211,7 +211,7 @@ export default function Footer() {
                         </div>
 
                         <div
-                            className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4"
+                            className="grid grid-cols-1 gap-16 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4"
                         >
                             <div className="text-center sm:text-left">
                                 <p className="text-3xl font-medium text-white">About Us</p>
