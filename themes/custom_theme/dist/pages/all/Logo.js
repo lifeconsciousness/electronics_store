@@ -9,12 +9,13 @@ function Logo() {
         className: "text-3xl font-bold"
     }, /*#__PURE__*/ React.createElement("span", {
         className: "text-orange-600"
-    }, "ele"), /*#__PURE__*/ React.createElement("span", {
+    }), /*#__PURE__*/ React.createElement("span", {
         className: "text-gray-300"
-    }, "ctronics")));
+    }, "SVALTERA")));
 }
 export default Logo;
 export const layout = {
     areaId: "header",
     sortOrder: 5
 };
+

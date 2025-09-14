@@ -5,8 +5,8 @@ function Logo() {
     <a href="/" className="flex items-center gap-3">
       <div className="text-orange-600 text-4xl">💡</div>
       <div className="text-3xl font-bold">
-        <span className="text-orange-600">ele</span>
-        <span className="text-gray-300">ctronics</span>
+        <span className="text-orange-600"></span>
+        <span className="text-gray-300">SVALTERA</span>
       </div>
     </a>
   );

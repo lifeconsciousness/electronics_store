@@ -4,120 +4,21 @@ import Logo from "./Logo";
 export default function Footer() {
     return (
         <>
-            {/* <footer className="footer">
-                <div className="page-width grid grid-cols-1 md:grid-cols-2 gap-2 justify-between">
-                    <div>
-                        <div className="card-icons flex justify-center space-x-1 md:justify-start">
-                            <div>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="38"
-                                    height="24"
-                                    aria-labelledby="pi-visa"
-                                    viewBox="0 0 38 24"
-                                >
-                                    <path
-                                        d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"
-                                        opacity="0.07"
-                                    />
-                                    <path
-                                        fill="#fff"
-                                        d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"
-                                    />
-                                    <path
-                                        fill="#142688"
-                                        d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z"
-                                    />
-                                </svg>
-                            </div>
-                            <div>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="38"
-                                    height="24"
-                                    aria-labelledby="pi-master"
-                                    viewBox="0 0 38 24"
-                                >
-                                    <path
-                                        d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"
-                                        opacity="0.07"
-                                    />
-                                    <path
-                                        fill="#fff"
-                                        d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"
-                                    />
-                                    <circle cx="15" cy="12" r="7" fill="#EB001B" />
-                                    <circle cx="23" cy="12" r="7" fill="#F79E1B" />
-                                    <path
-                                        fill="#FF5F00"
-                                        d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"
-                                    />
-                                </svg>
-                            </div>
-                            <div>
-                                <svg
-                                    viewBox="0 0 38 24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="38"
-                                    height="24"
-                                    role="img"
-                                    aria-labelledby="pi-paypal"
-                                >
-                                    <title id="pi-paypal">PayPal</title>
-                                    <path
-                                        opacity=".07"
-                                        d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"
-                                    />
-                                    <path
-                                        fill="#fff"
-                                        d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"
-                                    />
-                                    <path
-                                        fill="#003087"
-                                        d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z"
-                                    />
-                                    <path
-                                        fill="#3086C8"
-                                        d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z"
-                                    />
-                                    <path
-                                        fill="#012169"
-                                        d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z"
-                                    />
-                                </svg>
-                            </div>
-                        </div>
-
-
-                        <p>categories</p>
-                        <p>legal information</p>
-                        <p>contact</p>
-                    </div>
-
-
-                    <div className="self-center">
-                        <div className="copyright text-center md:text-right text-textSubdued">
-                            <span>Copyright © {new Date().getFullYear()} Elestore</span>
-                        </div>
-                    </div>
-                </div>
-            </footer> */}
-
             <footer className="bg-[#2f2f2f] footer text-xl">
-                <div className="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-24">
+                <div className="max-w-screen-xl pt-16 pb-6 mx-auto sm:px-12 lg:px-8 lg:pt-24">
                     <div className="grid grid-cols-1 gap-24 lg:grid-cols-3">
                         <div>
 
-                            <div className="flex flex-col items-center w-full">
+                            <div className="w-full flex flex-col max-sm:items-center">
                                 <Logo />
                                 <p
                                     className="max-w-md mx-auto mt-6 leading-relaxed text-center text-gray-400 sm:max-w-xs sm:mx-0 sm:text-left"
                                 >
-                                    Your reliable electronics distributor & online store
+                                    Your reliable electronics distributor since 1998
                                 </p>
                             </div>
 
-                            <ul className="flex justify-center gap-6 mt-8 md:gap-8 sm:justify-start">
+                            {/* <ul className="flex justify-center gap-6 mt-8 md:gap-8 sm:justify-start">
                                 <li>
                                     <a
                                         href="/"
@@ -185,29 +86,8 @@ export default function Footer() {
                                     </a>
                                 </li>
 
-                                {/* <li>
-                                    <a
-                                        href="/"
-                                        rel="noopener noreferrer"
-                                        target="_blank"
-                                        className="text-white transition hover:text-white/75"
-                                    >
-                                        <span className="sr-only">GitHub</span>
-                                        <svg
-                                            className="w-6 h-6"
-                                            fill="currentColor"
-                                            viewBox="0 0 24 24"
-                                            aria-hidden="true"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                                clip-rule="evenodd"
-                                            />
-                                        </svg>
-                                    </a>
-                                </li> */}
-                            </ul>
+                                
+                            </ul> */}
                         </div>
 
                         <div
@@ -229,18 +109,6 @@ export default function Footer() {
                                                 Meet the Team
                                             </a>
                                         </li>
-
-                                        <li>
-                                            <a className="text-white transition hover:text-white/75" href="/">
-                                                Employee Handbook
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a className="text-white transition hover:text-white/75" href="/">
-                                                Careers
-                                            </a>
-                                        </li>
                                     </ul>
                                 </nav>
                             </div>
@@ -252,27 +120,21 @@ export default function Footer() {
                                     <ul className="space-y-4 text-xl">
                                         <li>
                                             <a className="text-white transition hover:text-white/75" href="/">
-                                                Web Development
+                                                Service 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a className="text-white transition hover:text-white/75" href="/">
+                                                Service 2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a className="text-white transition hover:text-white/75" href="/">
+                                                Service 3
                                             </a>
                                         </li>
 
-                                        <li>
-                                            <a className="text-white transition hover:text-white/75" href="/">
-                                                Web Design
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a className="text-white transition hover:text-white/75" href="/">
-                                                Marketing
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a className="text-white transition hover:text-white/75" href="/">
-                                                Google Ads
-                                            </a>
-                                        </li>
+                                    
                                     </ul>
                                 </nav>
                             </div>
@@ -293,7 +155,7 @@ export default function Footer() {
                                             </a>
                                         </li>
 
-                                        <li>
+                                        {/* <li>
                                             <a
                                                 className="flex group justify-center sm:justify-start gap-1.5"
                                                 href="/"
@@ -311,7 +173,7 @@ export default function Footer() {
                                                     ></span>
                                                 </span>
                                             </a>
-                                        </li>
+                                        </li> */}
                                     </ul>
                                 </nav>
                             </div>
@@ -340,7 +202,7 @@ export default function Footer() {
                                             </svg>
 
                                             <span className="text-white transition group-hover:text-white/75">
-                                                john@doe.com
+                                                info@svaltera.nl
                                             </span>
                                         </a>
                                     </li>
@@ -395,7 +257,7 @@ export default function Footer() {
                                         </svg>
 
                                         <address className="-mt-0.5 not-italic text-white">
-                                            213 Lane, London, United Kingdom
+                                            Stationsplein 8 K, 6221BT Maastricht
                                         </address>
                                     </li>
                                 </ul>
@@ -408,7 +270,7 @@ export default function Footer() {
                             <p className="text-xl text-gray-400">
                                 <span className="block sm:inline">All rights reserved.</span>
 
-                                <a
+                                {/* <a
                                     className="inline-block text-white underline transition hover:text-white/75"
                                     href="/"
                                 >
@@ -422,11 +284,11 @@ export default function Footer() {
                                     href="/"
                                 >
                                     Privacy Policy
-                                </a>
+                                </a> */}
                             </p>
 
                             <p className="mt-4 text-xl text-gray-500 sm:order-first sm:mt-0">
-                                &copy; {new Date().getFullYear()} Company Name
+                                &copy; {new Date().getFullYear()} SV Altera
                             </p>
                         </div>
                     </div>

@@ -11,7 +11,7 @@ function MainBanner() {
         <div className="text-center md:text-left px-2 z-10">
 
           <h3 className="h1">
-            Your reliable electronics distributor & online store
+            Your reliable electronics distributor since 1998
           </h3>
           <p>Explore the Most Reliable Electronic Components</p>
           <p></p>

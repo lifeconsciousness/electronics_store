@@ -25,4 +25,3 @@ export default function OnlyHomePage() {
  //   areaId: 'content-custom',
  //   sortOrder: 10
  // };
-

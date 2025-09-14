@@ -9,7 +9,7 @@ function MainBanner() {
         className: "text-center md:text-left px-2 z-10"
     }, /*#__PURE__*/ React.createElement("h3", {
         className: "h1"
-    }, "Your reliable electronics distributor & online store"), /*#__PURE__*/ React.createElement("p", null, "Explore the Most Reliable Electronic Components"), /*#__PURE__*/ React.createElement("p", null), /*#__PURE__*/ React.createElement("a", {
+    }, "Your reliable electronics distributor since 1998"), /*#__PURE__*/ React.createElement("p", null, "Explore the Most Reliable Electronic Components"), /*#__PURE__*/ React.createElement("p", null), /*#__PURE__*/ React.createElement("a", {
         className: "button button-primary",
         href: ""
     }, "SHOW NOW")), /*#__PURE__*/ React.createElement("div", null)));
@@ -19,3 +19,4 @@ export const layout = {
     areaId: "content-custom",
     sortOrder: 1
 };
+
