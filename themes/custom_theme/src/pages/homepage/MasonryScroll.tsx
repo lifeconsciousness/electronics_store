@@ -23,13 +23,14 @@ export default function MasonryScroll() {
     const cards = Array.from({ length: totalCards }, (_, i) => data[i % data.length]);
 
     const goToPage = (index: number) => {
+        if (typeof window === "undefined" || !scrollRef.current) return;
         const scrollLeft = index * window.innerWidth;
         scrollRef.current?.scrollTo({ left: scrollLeft, behavior: 'smooth' });
         setCurrentPage(index);
     };
 
     const handleScroll = () => {
-        if (!scrollRef.current) return;
+        if (!scrollRef.current || typeof window === "undefined") return;
         const scrollLeft = scrollRef.current.scrollLeft;
         const newPage = Math.round(scrollLeft / window.innerWidth);
         if (newPage !== currentPage) setCurrentPage(newPage);

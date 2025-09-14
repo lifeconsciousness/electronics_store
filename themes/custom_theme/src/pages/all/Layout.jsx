@@ -11,10 +11,14 @@ import Logo from "./Logo";
 import Header from "./Header";
 
 export default function Layout() {
-  const path = window.location.pathname;
+  const [path, setPath] = React.useState("/");
 
   useEffect(() => {
-    console.log("Current path:", path);
+    if (typeof window !== "undefined") {
+      const currentPath = window.location.pathname;
+      setPath(currentPath);
+      console.log("Current path:", currentPath);
+    }
   }, []);
 
   return (

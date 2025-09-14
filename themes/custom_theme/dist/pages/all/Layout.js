@@ -8,9 +8,13 @@ import { useEffect } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 export default function Layout() {
-    const path = window.location.pathname;
+    const [path, setPath] = React.useState("/");
     useEffect(()=>{
-        console.log("Current path:", path);
+        if (typeof window !== "undefined") {
+            const currentPath = window.location.pathname;
+            setPath(currentPath);
+            console.log("Current path:", currentPath);
+        }
     }, []);
     return /*#__PURE__*/ React.createElement(React.Fragment, null, /*#__PURE__*/ React.createElement(LoadingBar, null), /*#__PURE__*/ React.createElement(Header, null), path === "/" ? /*#__PURE__*/ React.createElement("main", {
         className: "content-custom"
@@ -30,3 +34,4 @@ export const layout = {
     areaId: "body",
     sortOrder: 0
 };
+
