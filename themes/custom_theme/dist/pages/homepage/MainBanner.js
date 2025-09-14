@@ -11,7 +11,7 @@ function MainBanner() {
         className: "h1"
     }, "Your reliable electronics distributor since 1998"), /*#__PURE__*/ React.createElement("p", null, "Explore the Most Reliable Electronic Components"), /*#__PURE__*/ React.createElement("p", null), /*#__PURE__*/ React.createElement("a", {
         className: "button button-primary",
-        href: ""
+        href: "/relays"
     }, "SHOW NOW")), /*#__PURE__*/ React.createElement("div", null)));
 }
 export default MainBanner;
@@ -19,3 +19,4 @@ export const layout = {
     areaId: "content-custom",
     sortOrder: 1
 };
+

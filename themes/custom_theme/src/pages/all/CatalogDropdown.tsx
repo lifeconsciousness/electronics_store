@@ -71,30 +71,32 @@ const categories = [
 
 
 export default function CatalogDropdown() {
-    return (
-        <Dropdown
-            button={
-                <button className="flex items-center gap-2 border-white border-2 rounded-xl px-4 py-2 text-white text-xl hover:bg-white/10">
-                    <LayoutGrid />
-                    CATALOG
-                </button>
-            }
-            width="size-max"
+  return (
+    <Dropdown
+      button={
+        <button className="flex items-center gap-2 border-white border-2 rounded-xl px-4 py-2 text-white text-xl hover:bg-white/10">
+          <LayoutGrid />
+          CATALOG
+        </button>
+      }
+      width="size-max"
 
-        >
-            <ul className="space-y-2">
-                {categories.map((cat, idx) => (
-                    <li
-                        key={idx}
-                        className="flex items-center justify-between px-3 py-2 rounded hover:bg-gray-100 cursor-pointer text-xl"
-                    >
-                        {cat.label}
-                        <ChevronRight className="w-5 h-5 text-gray-400" />
-                    </li>
-                ))}
-            </ul>
-        </Dropdown>
+    >
+      <ul className="space-y-2">
+        {categories.map((cat, idx) => (
+          <li key={idx}
 
-    );
+          >
+            <a href={cat.link} className="flex items-center justify-between px-3 py-2 rounded hover:bg-gray-100 cursor-pointer text-xl">
+              {cat.label}
+              <ChevronRight className="w-5 h-5 text-gray-400" />
+            </a>
+          </li>
+
+        ))}
+      </ul>
+    </Dropdown>
+
+  );
 
 }

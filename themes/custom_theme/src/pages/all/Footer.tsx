@@ -228,7 +228,7 @@ export default function Footer() {
                                             </svg>
 
                                             <span className="text-white transition group-hover:text-white/75">
-                                                0123456789
+                                                +31634599335
                                             </span>
                                         </a>
                                     </li>

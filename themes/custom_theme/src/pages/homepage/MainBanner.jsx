@@ -15,7 +15,7 @@ function MainBanner() {
           </h3>
           <p>Explore the Most Reliable Electronic Components</p>
           <p></p>
-          <a className="button button-primary" href="">
+          <a className="button button-primary" href="/relays">
             SHOW NOW
           </a>
         </div>

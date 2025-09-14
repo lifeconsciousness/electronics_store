@@ -73,9 +73,12 @@ export default function CatalogDropdown() {
     }, /*#__PURE__*/ React.createElement("ul", {
         className: "space-y-2"
     }, categories.map((cat, idx)=>/*#__PURE__*/ React.createElement("li", {
-            key: idx,
+            key: idx
+        }, /*#__PURE__*/ React.createElement("a", {
+            href: cat.link,
             className: "flex items-center justify-between px-3 py-2 rounded hover:bg-gray-100 cursor-pointer text-xl"
         }, cat.label, /*#__PURE__*/ React.createElement(ChevronRight, {
             className: "w-5 h-5 text-gray-400"
-        })))));
+        }))))));
 }
+
