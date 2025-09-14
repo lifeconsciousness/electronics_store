@@ -19,4 +19,3 @@ export const layout = {
     areaId: "content-custom",
     sortOrder: 1
 };
-

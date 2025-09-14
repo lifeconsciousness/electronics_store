@@ -48,4 +48,3 @@ export default function Header() {
         className: "flex items-center justify-between px-3 py-2 rounded hover:bg-gray-100 cursor-pointer text-xl"
     }, "EN"))))));
 }
-
