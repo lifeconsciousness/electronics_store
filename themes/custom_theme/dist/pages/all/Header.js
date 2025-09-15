@@ -27,12 +27,14 @@ export default function Header() {
     })), /*#__PURE__*/ React.createElement("div", {
         className: "bg-blue-600 bg-orange-600 text-white text-xl font-semibold px-10 py-4 flex items-center justify-between xl:px-56"
     }, /*#__PURE__*/ React.createElement("div", {
-        className: "flex gap-10 items-center"
-    }, /*#__PURE__*/ React.createElement(CatalogDropdown, null), /*#__PURE__*/ React.createElement("button", {
+        className: "flex flex-col md:flex-row gap-4 md:gap-10 items-start md:items-center w-full md:w-auto"
+    }, /*#__PURE__*/ React.createElement(CatalogDropdown, null), /*#__PURE__*/ React.createElement("div", {
+        className: "hidden md:flex gap-4 md:gap-10 flex-wrap"
+    }, /*#__PURE__*/ React.createElement("button", {
         className: "flex items-center gap-1"
     }, "MANUFACTURERS", /*#__PURE__*/ React.createElement(ChevronDown, {
         className: "w-5 h-5"
-    })), /*#__PURE__*/ React.createElement("button", null, "BESTSELLERS"), /*#__PURE__*/ React.createElement("button", null, "SPECIAL-DEALS")), /*#__PURE__*/ React.createElement("div", {
+    })), /*#__PURE__*/ React.createElement("button", null, "BESTSELLERS"), /*#__PURE__*/ React.createElement("button", null, "SPECIAL-DEALS"))), /*#__PURE__*/ React.createElement("div", {
         className: "flex items-center gap-12"
     }, /*#__PURE__*/ React.createElement(Dropdown, {
         button: /*#__PURE__*/ React.createElement("button", {
@@ -48,3 +50,4 @@ export default function Header() {
         className: "flex items-center justify-between px-3 py-2 rounded hover:bg-gray-100 cursor-pointer text-xl"
     }, "EN"))))));
 }
+

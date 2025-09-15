@@ -1,6 +1,6 @@
 // components/CatalogDropdown.tsx
 
-import { LayoutGrid, ChevronRight } from "lucide-react";
+import { LayoutGrid, ChevronDown, ChevronRight } from "lucide-react";
 import Dropdown from "./Dropdown";
 import React from "react";
 
@@ -74,27 +74,44 @@ export default function CatalogDropdown() {
   return (
     <Dropdown
       button={
-        <button className="flex items-center gap-2 border-white border-2 rounded-xl px-4 py-2 text-white text-xl hover:bg-white/10">
-          <LayoutGrid />
+        <button className="flex items-center gap-2 border-white border-2 rounded-xl p-2 hover:bg-white/10">
+          <LayoutGrid className="w-8 h-8" />
           CATALOG
+          <ChevronDown className="w-5 h-5" />
         </button>
       }
       width="size-max"
 
     >
-      <ul className="space-y-2">
+      <div className="space-y-1">
+        {/* Main catalog items */}
+        <div className="px-4 py-4 text-gray-1000 font-bold text-lg uppercase tracking-wider border-b-2 border-gray-300 mb-3">
+          Browse Categories
+        </div>
         {categories.map((cat, idx) => (
-          <li key={idx}
-
-          >
-            <a href={cat.link} className="flex items-center justify-between px-3 py-2 rounded hover:bg-gray-100 cursor-pointer text-xl">
-              {cat.label}
-              <ChevronRight className="w-5 h-5 text-gray-400" />
-            </a>
-          </li>
-
+          <div key={idx} className="px-4 py-3 rounded hover:bg-gray-100 cursor-pointer text-gray-700 text-2xl flex items-center justify-between">
+            {cat.label}
+            <ChevronRight className="w-4 h-4" />
+          </div>
         ))}
-      </ul>
+
+        {/* Mobile-only navigation items */}
+        <div className="md:hidden">
+          <div className="px-4 py-4 text-gray-1000 font-bold text-lg uppercase tracking-wider border-b-2 border-gray-300 mt-6 mb-3">
+            Quick Links
+          </div>
+          <div className="px-4 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-700 flex items-center gap-2 text-2xl">
+            Manufacturers
+            <ChevronDown className="w-4 h-4" />
+          </div>
+          <div className="px-4 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-700 text-2xl">
+            Bestsellers
+          </div>
+          <div className="px-4 py-2 rounded hover:bg-gray-100 cursor-pointer text-gray-700 text-2xl">
+            Special-Deals
+          </div>
+        </div>
+      </div>
     </Dropdown>
 
   );

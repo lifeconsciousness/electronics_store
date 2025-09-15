@@ -37,7 +37,7 @@ export default function MobileMenu({ menu: { items } }) {
     }, /*#__PURE__*/ React.createElement("a", {
         className: "nav-link hover:underline",
         href: "/page/contact"
-    }, "Contact"))));
+    }, "Contact us"))));
 }
 MobileMenu.propTypes = {
     menu: PropTypes.shape({
@@ -60,3 +60,4 @@ export const query = `
       }
     }
 }`;
+

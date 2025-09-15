@@ -76,17 +76,16 @@ export default function Header() {
 
             {/* Navigation Bar */}
             <div className="bg-blue-600 bg-orange-600 text-white text-xl font-semibold px-10 py-4 flex items-center justify-between xl:px-56">
-                <div className="flex gap-10 items-center">
-                    {/* <button className="flex items-center gap-2 border-white border-2 rounded-xl p-2">
-                        <LayoutGrid /> CATALOG
-                    </button> */}
+                <div className="flex flex-col md:flex-row gap-4 md:gap-10 items-start md:items-center w-full md:w-auto">
                     <CatalogDropdown />
-                    <button className="flex items-center gap-1">
-                        MANUFACTURERS
-                        <ChevronDown className="w-5 h-5" />
-                    </button>
-                    <button>BESTSELLERS</button>
-                    <button>SPECIAL-DEALS</button>
+                    <div className="hidden md:flex gap-4 md:gap-10 flex-wrap">
+                        <button className="flex items-center gap-1">
+                            MANUFACTURERS
+                            <ChevronDown className="w-5 h-5" />
+                        </button>
+                        <button>BESTSELLERS</button>
+                        <button>SPECIAL-DEALS</button>
+                    </div>
                 </div>
 
                 {/* Right: Currency / Language / Quick Buy */}
