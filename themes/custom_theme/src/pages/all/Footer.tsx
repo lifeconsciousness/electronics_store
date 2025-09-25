@@ -14,7 +14,7 @@ export default function Footer() {
                                 <p
                                     className="max-w-md mx-auto mt-6 leading-relaxed text-center text-gray-400 sm:max-w-xs sm:mx-0 sm:text-left"
                                 >
-                                    Your reliable electronics distributor since 1998
+                                    Your reliable electronics distributor since 2014
                                 </p>
                             </div>
 
@@ -134,7 +134,7 @@ export default function Footer() {
                                             </a>
                                         </li>
 
-                                    
+
                                     </ul>
                                 </nav>
                             </div>
@@ -202,7 +202,7 @@ export default function Footer() {
                                             </svg>
 
                                             <span className="text-white transition group-hover:text-white/75">
-                                                info@svaltera.nl
+                                                info@baltdrivetechnology.ee
                                             </span>
                                         </a>
                                     </li>
@@ -257,7 +257,7 @@ export default function Footer() {
                                         </svg>
 
                                         <address className="-mt-0.5 not-italic text-white">
-                                            Stationsplein 8 K, 6221BT Maastricht
+                                            Tornimae tn 7-132, 10145, Tallinn, Estonia
                                         </address>
                                     </li>
                                 </ul>

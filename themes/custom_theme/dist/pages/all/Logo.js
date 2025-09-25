@@ -11,7 +11,7 @@ function Logo() {
         className: "text-orange-600"
     }), /*#__PURE__*/ React.createElement("span", {
         className: "text-gray-300"
-    }, "SVALTERA")));
+    }, "BALT DRIVE TECHNOLOGY")));
 }
 export default Logo;
 export const layout = {

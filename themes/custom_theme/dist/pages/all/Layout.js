@@ -34,4 +34,3 @@ export const layout = {
     areaId: "body",
     sortOrder: 0
 };
-

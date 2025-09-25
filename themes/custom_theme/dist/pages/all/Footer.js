@@ -11,7 +11,7 @@ export default function Footer() {
         className: "w-full flex flex-col max-sm:items-center"
     }, /*#__PURE__*/ React.createElement(Logo, null), /*#__PURE__*/ React.createElement("p", {
         className: "max-w-md mx-auto mt-6 leading-relaxed text-center text-gray-400 sm:max-w-xs sm:mx-0 sm:text-left"
-    }, "Your reliable electronics distributor since 1998"))), /*#__PURE__*/ React.createElement("div", {
+    }, "Your reliable electronics distributor since 2014"))), /*#__PURE__*/ React.createElement("div", {
         className: "grid grid-cols-1 gap-16 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4"
     }, /*#__PURE__*/ React.createElement("div", {
         className: "text-center sm:text-left"
@@ -80,7 +80,7 @@ export default function Footer() {
         d: "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
     })), /*#__PURE__*/ React.createElement("span", {
         className: "text-white transition group-hover:text-white/75"
-    }, "info@svaltera.nl"))), /*#__PURE__*/ React.createElement("li", null, /*#__PURE__*/ React.createElement("a", {
+    }, "info@baltdrivetechnology.ee"))), /*#__PURE__*/ React.createElement("li", null, /*#__PURE__*/ React.createElement("a", {
         className: "flex items-center justify-center sm:justify-start gap-1.5 group",
         href: "/"
     }, /*#__PURE__*/ React.createElement("svg", {
@@ -115,7 +115,7 @@ export default function Footer() {
         d: "M15 11a3 3 0 11-6 0 3 3 0 016 0z"
     })), /*#__PURE__*/ React.createElement("address", {
         className: "-mt-0.5 not-italic text-white"
-    }, "Stationsplein 8 K, 6221BT Maastricht")))))), /*#__PURE__*/ React.createElement("div", {
+    }, "Tornimae tn 7-132, 10145, Tallinn, Estonia")))))), /*#__PURE__*/ React.createElement("div", {
         className: "pt-6 mt-12 border-t border-gray-500"
     }, /*#__PURE__*/ React.createElement("div", {
         className: "text-center sm:flex sm:justify-between sm:text-left"

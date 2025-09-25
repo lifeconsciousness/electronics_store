@@ -25,7 +25,7 @@ export default function Header() {
             }
         ]
     })), /*#__PURE__*/ React.createElement("div", {
-        className: "bg-blue-600 bg-orange-600 text-white text-xl font-semibold px-10 py-4 flex items-center justify-between xl:px-56"
+        className: "bg-blue-600 text-white text-xl font-semibold px-10 py-4 flex items-center justify-between xl:px-56"
     }, /*#__PURE__*/ React.createElement("div", {
         className: "flex flex-col md:flex-row gap-4 md:gap-10 items-start md:items-center w-full md:w-auto"
     }, /*#__PURE__*/ React.createElement(CatalogDropdown, null), /*#__PURE__*/ React.createElement("div", {
@@ -46,8 +46,8 @@ export default function Header() {
         className: "space-y-2"
     }, /*#__PURE__*/ React.createElement("li", {
         className: "flex items-center justify-between px-3 py-2 rounded hover:bg-gray-100 cursor-pointer text-xl"
-    }, "NL"), /*#__PURE__*/ React.createElement("li", {
+    }, "EN"), /*#__PURE__*/ React.createElement("li", {
         className: "flex items-center justify-between px-3 py-2 rounded hover:bg-gray-100 cursor-pointer text-xl"
-    }, "EN"))))));
+    }, "ET"))))));
 }
 
