@@ -1,0 +1,148 @@
+.manufacturer-filter {
+  margin-bottom: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.filter-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0;
+}
+
+.clear-filter-btn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.clear-filter-btn:hover {
+  background-color: #fef2f2;
+}
+
+.filter-content {
+  position: relative;
+}
+
+.filter-toggle-btn {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #374151;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.filter-toggle-btn:hover {
+  border-color: #9ca3af;
+}
+
+.filter-toggle-btn:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.chevron-icon {
+  color: #6b7280;
+  transition: transform 0.2s;
+}
+
+.manufacturer-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 0.25rem;
+}
+
+.manufacturer-option {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.manufacturer-option:last-child {
+  border-bottom: none;
+}
+
+.manufacturer-option:hover {
+  background-color: #f9fafb;
+}
+
+.manufacturer-option input[type="radio"] {
+  margin-right: 0.75rem;
+  width: 16px;
+  height: 16px;
+}
+
+.manufacturer-name {
+  font-size: 0.95rem;
+  color: #374151;
+  flex: 1;
+}
+
+.selected-manufacturer {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 4px;
+}
+
+.selected-label {
+  font-size: 0.875rem;
+  color: #1d4ed8;
+  font-weight: 500;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .manufacturer-filter {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+  }
+  
+  .filter-title {
+    font-size: 1rem;
+  }
+  
+  .manufacturer-list {
+    max-height: 150px;
+  }
+  
+  .manufacturer-option {
+    padding: 0.625rem 0.75rem;
+  }
+}

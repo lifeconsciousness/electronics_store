@@ -3,7 +3,7 @@ import React from "react";
 import "./MobileMenu.scss";
 export default function MobileMenu({ menu: { items } }) {
     const [show, setShow] = React.useState(false);
-    return /*#__PURE__*/ React.createElement("div", {
+    return /*#__PURE__*/ React.createElement(React.Fragment, null, /*#__PURE__*/ React.createElement("div", {
         className: "main-menu-mobile self-center"
     }, /*#__PURE__*/ React.createElement("a", {
         className: "menu-icon",
@@ -37,7 +37,7 @@ export default function MobileMenu({ menu: { items } }) {
     }, /*#__PURE__*/ React.createElement("a", {
         className: "nav-link hover:underline",
         href: "/page/contact"
-    }, "Contact"))));
+    }, "Contact me")))));
 }
 MobileMenu.propTypes = {
     menu: PropTypes.shape({

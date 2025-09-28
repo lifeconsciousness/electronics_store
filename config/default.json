@@ -69,8 +69,8 @@
       {
         "name": "custom_extension",
         "resolve": "extensions/custom_extension",
-        "enabled": false,
-        "priority": 0
+        "enabled": true,
+        "priority": 5
       },
       {
         "name": "product_review",
