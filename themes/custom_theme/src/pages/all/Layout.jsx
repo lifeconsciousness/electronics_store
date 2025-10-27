@@ -27,6 +27,8 @@ export default function Layout() {
 
       <Header />
 
+      {/* Default header */}
+      
       {/* <div className="header">
         <div className="page-width flex justify-between">
           <Area

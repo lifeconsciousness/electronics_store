@@ -1,6 +1,9 @@
-import React from "react";
 import "./MainBanner.scss";
+import React, { useEffect } from 'react';
 function MainBanner() {
+    useEffect(()=>{
+        document.title = 'Svaltera - Electronics Distributor';
+    }, []);
     return /*#__PURE__*/ React.createElement("div", {
         className: "main-banner-home flex items-center relative"
     }, /*#__PURE__*/ React.createElement("div", {

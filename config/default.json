@@ -82,13 +82,13 @@
   },
   "themeConfig": {
     "logo": {
-      "alt": "Elestore Logo",
-      "src": "/logo.png",
-      "width": 75,
-      "height": 70
+      "alt": "Svaltera Logo",
+      "src": "/log.png",
+      "width": 30,
+      "height": 30
     },
     "headTags": {
-      "title": "Elestore",
+      "title": "Svaltera - Electronics Distributor",
       "links": [
         {
           "rel": "icon",
@@ -98,6 +98,6 @@
       "metas": [],
       "scripts": []
     },
-    "copyRight": "© 2024 Elestore. All Rights Reserved."
+    "copyRight": "© 2025 Svaltera. All Rights Reserved."
   }
 }

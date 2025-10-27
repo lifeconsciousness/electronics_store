@@ -1,7 +1,14 @@
-import React from "react";
 import "./MainBanner.scss";
+import React, { useEffect } from 'react';
+
+
 
 function MainBanner() {
+  useEffect(() => {
+    document.title = 'Svaltera - Electronics Distributor';
+  }, []);
+
+
   return (
     <div className="main-banner-home flex items-center relative">
       {/* Background blur - covers entire banner */}
